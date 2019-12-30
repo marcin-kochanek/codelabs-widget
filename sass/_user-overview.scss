@@ -1,0 +1,104 @@
+.user-overview {
+    margin-bottom: 10px;
+
+    &__heading {
+        color: var(--color-secondary);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+
+    &__radial-progress-bar-wrapper {
+      display: flex;
+      margin: 20px 5px;
+    }
+
+    &__radial-progress-bar-box {
+        height: 94px;
+        width: 120px;
+        position: relative;
+        margin-right: 25px;
+    }
+
+    &__radial-progress-bar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        path {
+            will-change: auto;
+            stroke-miterlimit: round;
+            transition: stroke-dashoffset 850ms ease-in-out;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    &__info-heading {
+        font-size: 1.1rem;
+        color: var(--color-grey-light-4);
+    }
+
+    &__current-result {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    &__goal {
+        font-size: 1.1rem;
+        font-weight: 800;
+        width: 120px;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    &__more-mins {
+        font-weight: 900;
+    }
+
+    &__streaks-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__streak {
+        text-align: center;
+        border-radius: 5px;
+        width: 48%;
+        padding: 10px 0;
+        font-size: 1.1rem;
+        font-weight: 800;
+        background-color: var(--color-grey-light-3);
+    }
+
+    &__current,
+    &__best {
+        font-size: 1.6rem;
+        font-weight: 800;
+    }
+}

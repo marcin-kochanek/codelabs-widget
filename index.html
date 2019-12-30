@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+        <title>codelabs.rocks &mdash; widget</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="widget">
+                <div class="user-overview">
+                    <h2 class="user-overview__heading">Pedro's weekly goal</h2>
+                    <div class="user-overview__radial-progress-bar-wrapper">
+                        <div class="user-overview__radial-progress-bar-box">
+                            <svg class="user-overview__radial-progress-bar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="216.1px" height="188.4px" viewBox="0 0 216.1 188.4" enable-background="new 0 0 216.1 188.4" xml:space="preserve">
+                                <path fill="none" stroke="#dfe3e9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                                    M 177.5, 181.4
+                                    c 19.4-18.4, 31.5-44.5, 31.5-73.3
+                                    c 0-55.8-45.2-101-101-101
+                                    S 7,52.2,7,108
+                                    c 0,28.9,12.1,54.9,31.5,73.3">
+                                </path>
+                                <path class="current-progress" fill="none" stroke="#4990e2" stroke-dasharray="0, 490" stroke-dashoffset="490" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                                    M 177.5, 181.4
+                                    c 19.4-18.4, 31.5-44.5, 31.5-73.3
+                                    c 0-55.8-45.2-101-101-101
+                                    S 7,52.2,7,108
+                                    c 0,28.9,12.1,54.9,31.5,73.3">
+                                </path>
+                            </svg>
+                            <div class="user-overview__info">
+                                <p class="user-overview__info-heading">Current</p>
+                                <p class="user-overview__current-result">
+                                    <span id="current-result">38</span>m
+                                </p>
+                            </div>
+                            <div class="user-overview__goal">50m Goal</div>
+                        </div>
+                        <div class="user-overview__content">
+                            <p class="user-overview__description">
+                                <span id="more-mins" class="user-overview__more-mins">12</span>
+                                <span>more mins. to achieve this week's Goal.</span>
+                            </p>
+                            <div class="user-overview__streaks-wrapper">
+                                <div class="user-overview__streak">
+                                    <p id="current-streak" class="user-overview__current">
+                                        4
+                                    </p>
+                                    <p>Current Streak</p>
+                                </div>
+                                <div class="user-overview__streak">
+                                    <p id="best-streak" class="user-overview__best">12</p>
+                                    <p>Best Streak</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="leaderboard">
+                    <div class="leaderboard__header">
+                        <h2 class="leaderboard__heading">Leaderboard</h2>
+                        <div class="leaderboard__select-wrapper">
+                            <select id="select-period" class="leaderboard__select" name="period">
+                                <option selected value="week">Week</option>
+                                <option value="month">Month</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="leaderboard__ranking"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

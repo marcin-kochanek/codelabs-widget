@@ -1,0 +1,37 @@
+{
+  "user_id": 4,
+  "current": 38,
+  "more_mins": 12,
+  "current_streak": 4,
+  "best_streak": 12,
+  "users": [
+    {
+      "id": 1,
+      "place": 1,
+      "name": "Walter Wynne",
+      "current_streak": 105,
+      "status": "rise"
+    },
+    {
+      "id": 2,
+      "place": 2,
+      "name": "Annabel Ferdinand",
+      "current_streak": 52,
+      "status": "same"
+    },
+    {
+      "id": 3,
+      "place": 3,
+      "name": "Marty McFly",
+      "current_streak": 50,
+      "status": "rise"
+    },
+    {
+      "id": 4,
+      "place": 7,
+      "name": "Pedro Pauleta",
+      "current_streak": 38,
+      "status": "rise"
+    }
+  ]
+}
